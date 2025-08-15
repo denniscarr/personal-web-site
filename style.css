@@ -52,16 +52,16 @@ body {
 	font-weight: normal;
 
 	line-height: 1.5;
-	text-align: center;
+	text-align: left;
 
 	letter-spacing: 10px;
-	word-spacing: 0.06em;
+	word-spacing: 0px;
+	word-wrap: break-word;
+	white-space: pre-wrap;
 
 	padding: 1.5em;
 	padding-top: 0.01em;
 	padding-bottom: 0.01em;
-
-	word-wrap: break-word;	
 }
 
 
@@ -70,7 +70,7 @@ body {
 	font-style: italic;
 	font-weight: bold;
 	text-decoration: none;
-	word-break: break-all;
+	word-break: break-word;
 }
 
 
