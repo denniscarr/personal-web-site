@@ -1,0 +1,343 @@
+html {
+	min-height: 100%;
+	position: relative;
+	background: black;
+}
+
+
+body {
+	height: 100%;
+	display: block;
+	margin: 1em 14% 1em 14%;
+	text-align: center;
+}
+
+
+#page_title {
+	display: block;
+
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 6vw;
+	font-weight: lighter;
+
+	letter-spacing:  0.3em;
+
+	color: white;
+
+	line-height: 1em;
+
+	text-align: center;
+
+	padding: 0px;
+}
+
+
+#sub_title {
+	display: inline-block;
+
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 1.3vw;
+	font-style: italic;
+	font-weight: normal;
+
+	letter-spacing: 0.1em;
+
+	text-align: center;
+
+	line-height: 1.1em;
+
+	color: white;
+}
+
+
+.auto-resizable-iframe {
+  max-width: 854px;
+  min-width: 400px;
+  margin: 0px auto;
+}
+
+.auto-resizable-iframe > div {
+  position: relative;
+  padding-bottom: 60%;
+  height: 0px;
+}
+
+.auto-resizable-iframe iframe {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+#main_text {
+	z-index: 10;
+
+	font-size: 1.1em;
+	letter-spacing: 0.07em;
+	word-spacing: 0.25em;
+	line-height: 1.5em;
+	font-family: Roboto, Verdana, Geneva, sans-serif;
+	font-weight: lighter;
+	color: white;
+
+	width: 70%;
+	min-width: 400px;
+
+	display: inline-block;
+
+	text-align: left;
+
+	margin-top: 1em;
+
+	color: white;
+}
+
+#main_text .blurb {
+	display: inline-block;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 1.1vw;
+	letter-spacing: 0.07em;
+	font-style: normal;
+	font-weight: light;
+}
+
+#main_text .small_blurb {
+	display: inline-block;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 0.9vw;
+	letter-spacing: 0.07em;
+	font-style: oblique;
+	font-weight: normal;
+}
+
+#main_text div {
+	float: left;
+	width: auto;
+	min-width: 200px;
+	max-width: 33%;
+	margin-top: 0.1em;
+	margin-bottom: 1em;
+}
+
+#main_text h1 {
+ 	display: block;
+
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 1.5em;
+	font-style: italic;
+
+	letter-spacing: 0.1em;
+	line-height: 1.2em;
+
+	margin-left: 0em;
+	margin-bottom: 0em;
+	margin-top: 0em;
+
+	break-after: 0em;
+
+	text-align: center;
+}
+
+#main_text h2 {
+ 	display: block;
+
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 0.75em;
+	font-style: italic;
+
+	letter-spacing: 0.1em;
+	line-height: 1.2em;
+
+	color: white;
+
+	margin-left: 0em;
+	margin-bottom: 0em;
+	margin-top: 0em;
+
+	break-after: 0em;
+
+	text-align: center;
+}
+
+
+#main_text ul {
+	display: inline-block;
+	list-style-type: circle;
+	
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 0.9em;
+	font-weight: lighter;
+	color: white;
+
+	text-align: left;
+
+	line-height: 1.4em;
+}
+
+#main_text li {
+	color: white;
+}
+
+#main_text a {
+	position: relative;	
+	font-size: 1em;
+	font-weight: lighter;
+	font-style: inherit;
+	text-decoration: underline;
+	color: inherit;
+}
+
+#main_text li a:hover {
+	background-color: white;
+	color: black;
+}
+
+#gif {
+	display: block;
+	z-index: 5;
+	text-align: left;
+	top: 1em;
+	max-width: 608px;
+	min-width: 300px;
+  	margin: 0px auto;
+
+  	text-indent: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+#gif h1 {
+ 	display: inline-block;
+
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 1em;
+	font-style: italic;
+
+	letter-spacing: 0.1em;
+	line-height: 1.2em;
+
+	color: white;
+
+	margin-left: 1.4em;
+	margin-bottom: 0em;
+	margin-top: 0em;
+
+	break-after: 0em;
+
+	text-align: left;
+}
+
+
+#gif > div {
+  position: relative;
+  padding-bottom: 60%;
+  height: 0px;
+  margin: 0.7em 0em 0.7em 0em;
+  float: center;
+}
+
+#gif .gif1 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("./images/gif1.png");
+}
+
+#gif .gif1:hover {
+	background-image: url("./images/gif1.gif");
+}
+
+.gif2 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("./images/gif2.png");
+}
+
+.gif2:hover {
+	background-image: url("./images/gif2.gif");
+}
+
+.gif3 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("./images/gif3.png");
+}
+
+.gif3:hover {
+	background-image: url("./images/gif3.gif");
+}
+
+.gif4 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url("./images/gif4.png");
+}
+
+.gif4:hover {
+	background-image: url("./images/gif4.gif");
+}
+
+
+a {
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-family: Verdana, Geneva, sans-serif;
+	font-style: italic;
+	text-decoration: underline;
+	font-size: 0.8em;
+	color: white;
+	width: auto;
+	text-align: center;
+}
+
+a:hover {
+	background-color: white;
+	color: black;
+}
+
+
+#background_text {
+	position: absolute;
+	top: -3em;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	font-family: "Courier New", Courier, monospace;
+	font-style: bold;
+	color: grey;
+
+	text-overflow: clip;
+	overflow: hidden;
+	overflow-wrap: break-word;
+	white-space: pre-wrap;
+
+	z-index: -100;
+}
