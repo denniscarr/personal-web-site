@@ -8,9 +8,9 @@ body {
 	font-weight: normal;
 	/*font-style: italic;*/
 	font-size: 1.05em;
-	letter-spacing: 0.07em;
+	letter-spacing: 0.05em;
 	word-spacing: 0.25em;
-	line-height: 1;
+	line-height: 1.35em;
 	text-align: center;
 	color: black;
 }
