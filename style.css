@@ -6,10 +6,9 @@ html {
 body {
 	font-family: monospace;
 	font-weight: normal;
-	/*font-style: italic;*/
-	font-size: 1.05em;
-	letter-spacing: 0.05em;
-	word-spacing: 0.25em;
+	font-size: 1em;
+	letter-spacing: 0.02em;
+	word-spacing: 0.1em;
 	line-height: 1.35em;
 	text-align: center;
 	color: black;
@@ -17,11 +16,9 @@ body {
 
 #content {
 	width: 70%;
-	/*min-width: 500px;*/
 	max-width: 800px;
 	display: inline-block;
 	overflow: auto;
-	/*background-color: blue;*/
 }
 
 #ihavefivehat_logo {
@@ -31,9 +28,9 @@ body {
 	max-height: 140px;
 	display: inline-block;
 
-	border-width: 3px;
-	border-left-width: 8px;
-	border-right-width: 8px;
+	border-width: 1px;
+	/* border-left-width: 3px;
+	border-right-width: 3px; */
 	border-style: dashed;
 	border-color: black;
 
@@ -43,7 +40,7 @@ body {
 }
 
 #ihavefivehat_logo p {
-	color: black;
+	color: rgb(74, 74, 74);
 
 	font-family: "Courier New";
 	font-size: 19px;
@@ -67,8 +64,8 @@ body {
 
 #ihavefivehat_logo a {
 	color: black;
-	font-style: italic;
-	font-weight: bold;
+	/* font-style: italic; */
+	/* font-weight: bold; */
 	text-decoration: none;
 	word-break: break-word;
 }
@@ -77,9 +74,9 @@ body {
 #subsection_links {
 	display: inline-block;
 
-	font-weight: lighter;
+	/* font-weight: lighter; */
 	font-variant: small-caps;
-	font-style: italic;
+	/* font-style: italic; */
 
 	letter-spacing: 0.25em;
 
