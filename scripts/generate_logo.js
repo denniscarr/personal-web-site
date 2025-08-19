@@ -1,4 +1,4 @@
-var stringLength = 84;
+var stringLength = 90;
 var logoChars = [];
 
 // Generate a string.

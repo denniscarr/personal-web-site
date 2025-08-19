@@ -22,9 +22,9 @@ body {
 }
 
 #ihavefivehat_logo {
-	background-color: white;
+	background-color: rgb(252, 252, 252);
 
-	width: 95%;
+	width: 99%;
 	max-height: 140px;
 	display: inline-block;
 
@@ -133,87 +133,104 @@ body {
 }
 
 
+#subsection_links .bookend {
+	display: inline-block;
+}
+
+
 #main_body {
 	display: inline-block;
 
-	color: black;
-	background-color: white;
+	/* color: black; */
 
-	width: 90%;
+	background-color: rgb(240, 240, 240);
+
+	width: 92.5%;
 
 	margin: 4px;
-	padding: 10px;
-	padding-top: 5px;
+	padding: 20px;
 
-	border-style: double;
+	border-style: solid;
+	border-width: 1px;
+}
+
+
+#main_body h1 {
+	display: inline-block;
+	text-align: center;
+
+	/* font-variant: small-caps; */
+	font-style: italic;
+	font-size: 25px;
+	font-weight: lighter;
+
+	background-color: white;
+
+	border-width: 1px;
+	border-style: dotted;
+	/* border-color: gray; */
+
+	padding: 8px;
+	/* padding-left: 13px; */
+	/* padding-right: 13px; */
+	
+	margin: 10px;
+	margin-bottom: 1em;
 }
 
 
 #main_body p {
-	margin: 0.5em;
+	margin: 0px;
+	margin-bottom: 1em;
+	text-align: left;
 }
 
 
 #main_body a {
-	color: black;
+	color: #3c3c3c;
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-decoration-style: dotted;
+	text-underline-offset: 2px;
 }
 
 
 #main_body a:focus, #main_body a:hover {
-	padding: 0;
-	margin: 0;
-	color: red;
 	font-style: italic;
 }
 
 
-#main_body h3 {
-	display: inline-block;
-
-	color: black;
-
-	font-variant: small-caps;
-	font-style: italic;
-	font-size: 25px;
-	font-weight: bold;
-
-	border-width: 1px;
-
-	padding: 0px;
-	padding-left: 13px;
-	padding-right: 13px;
-	
-	text-align: center;
-
-	margin: 10px;
-	margin-bottom: 0px;
+#main_body a:visited {
+	color: #5d5d5d;
 }
 
 
-#main_body ul, li  {
+#main_body ul, ol {
 	color: black;
 	font-style: italic;
 	font-size: 1em;
-
-	line-height: 1em;
-
+	line-height: 1.5em;
 	text-align: left;
+	/* padding: 0px; */
 }
+
 
 #game_entry_holder {
 	display: inline-block;
-	width: 94%;
-	padding: 10px;
-	/*background-color: green;*/
+	/* width: 94%; */
+	/* padding: 10px; */
 }
 
 .game_entry {
 	display: inline-block;
-	text-align: center;
-	width: 99%;
-	margin: 1%;
-	margin-bottom: 5%;
-	/*background-color: blue;*/
+	text-align: left;
+	/* width: 99%; */
+	margin-bottom: 10px;
+	background-color: white;
+	border-width: 1px;
+	border-style: dotted;
+	border-color: grey;
+	padding: 10px;
 }
 
 .game_entry_image_section {
@@ -222,38 +239,6 @@ body {
 	width: 19%;
 	min-width: 135px;
 	height: 100%;
-	/*background-color: red;*/
-}
-
-.game_entry_text_section {
-	display: inline-block;		
-	width: 65%;
-	height: 100%;
-	vertical-align: middle;
-	/*background-color: yellow;*/
-}
-
-.game_entry_text_section p {
-	/*margin: auto;*/
-	/*margin-bottom: 20px;*/
-	display: inline-block;
-	text-align: left;
-	vertical-align: top;
-	font-size: 1.025em;
-	font-style: italic;
-	/*background-color: orange;*/
-}
-
-.game_entry_text_section a {
-	vertical-align: top;
-	line-height: 1.5em;
-	color: black;
-	font-weight: bold;
-	font-variant: small-caps;
-	font-style: normal;
-	font-size: 1.3em;
-	text-decoration: none;
-	word-spacing: -0.3em;
 }
 
 .game_entry_image_section img {
@@ -263,24 +248,40 @@ body {
 	height: 125px;
 	overflow: hidden;	
 	border-style: double;
-	border-color: black;
-	border-width: 5px;
+	border-color: gray;
+	border-width: 3px;
 }
 
 .game_entry_image_section img:hover {
-	border-color: red;
+	border-color: lightgray;
 }
 
-#contact_info ul, li {
-	color: black;
-	font-style: italic;
-	font-size: 1em;
+.game_entry_text_section {
+	display: inline-block;		
+	width: 78.5%;
+	height: 100%;
+	vertical-align: top;
+}
+
+#game_entry_holder h2 {
+	vertical-align: top;
 	line-height: 1.5em;
-	text-align: left;
+	color: black;
+	font-weight: normal;
+	font-size: 1.3em;
+	/* font-variant: small-caps; */
+	font-style: normal;
+	text-decoration: none;
+	margin: 0px;
+	/* word-spacing: -0.3em; */
 }
 
-#contact_info a {
-	font-weight: normal;
+#game_entry_holder h2 a {
+	color: black;
+}
+
+#game_entry_holder a:visited {
+	color: black;
 }
 
 @media only screen and (orientation: portrait) {
@@ -289,7 +290,10 @@ body {
 		min-width: 0px;
 	}
 	#subsection_links {
-		width: 150px;
+		width: 100px;
+	}
+	#subsection_links .link {
+		margin-bottom: 5px;
 	}
 	.game_entry_image_section {
 		width: 100%;
