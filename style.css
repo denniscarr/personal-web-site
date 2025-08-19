@@ -1,47 +1,61 @@
 html {
+	box-sizing: border-box;
 	min-height: 100%;
 	background: linear-gradient(to bottom, white, black);
+	padding: 0px;
+	margin: 0px;
 }
 
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	padding: 0px;
+	margin: 0px;
+}
+
+
 body {
+	color: black;
 	font-family: "Courier New", monospace;
 	font-weight: normal;
 	font-size: 1em;
 	letter-spacing: 0.02em;
 	word-spacing: 0.1em;
-	line-height: 1.35em;
+	/* line-height: 0px; */
 	text-align: center;
-	color: black;
 }
 
 #content {
+	display: block;
 	width: 70%;
 	max-width: 800px;
-	display: inline-block;
+	padding: 10px 0px 10px 0px;
+	margin: auto;
+	line-height: 1em;
 	overflow: auto;
 }
 
 #ihavefivehat_logo {
 	background-color: rgb(252, 252, 252);
-
-	width: 99%;
 	max-height: 140px;
-	display: inline-block;
-
+	
+	padding: 0.725em 1em;
+	
 	border-width: 1px;
-	/* border-left-width: 3px;
-	border-right-width: 3px; */
 	border-style: dashed;
 	border-color: black;
-
-	padding: 1px;
+	
+	margin: 0px auto;
 	
 	overflow: hidden;
 }
 
-#ihavefivehat_logo p {
-	color: rgb(74, 74, 74);
+#logo_string {
+	display: inline;
 
+	color: rgb(74, 74, 74);
 	font-family: "Courier New";
 	font-size: 19px;
 	font-style: normal;
@@ -49,67 +63,51 @@ body {
 	font-weight: normal;
 
 	line-height: 1.5;
-	text-align: left;
+	text-align: center;
 
 	letter-spacing: 10px;
 	word-spacing: 0px;
 	word-wrap: break-word;
 	white-space: pre-wrap;
 
-	padding: 1.5em;
-	padding-top: 0.01em;
-	padding-bottom: 0.01em;
+	overflow: hidden;
 }
 
 
 #ihavefivehat_logo a {
 	color: black;
-	/* font-style: italic; */
-	/* font-weight: bold; */
 	text-decoration: none;
 	word-break: break-word;
 }
 
 
 #ihavefivehat_logo a:hover, #ihavefivehat_logo a:focus {
-	font-weight: bold;
+	font-style: italic;
 }
 
 
 #subsection_links {
-	display: inline-block;
-
-	/* font-weight: lighter; */
-	/* font-variant: small-caps; */
-	/* font-style: italic; */
-
-	/* letter-spacing: 0.25em; */
-
 	text-align: center;
 	text-indent: 5px;
 
-	margin: 5px;
-	margin-bottom: 4px;
+	margin: 15px auto;
 }
 
 
 #subsection_links .link {
 	display: inline-block;
+	min-width: 115px;
 
 	background-color: white;
-	
-	border-color: grey; 
-	border-style: outset;
-	border-width: 3px;
-
 	color: black;
 	font-size: 1.1em;
 	text-decoration: none;
 
-	padding-top: 2.5px;
-	padding-bottom: 2.5px;
-	padding-left: 2.5px;
-	padding-right: 6px;
+	
+	/* text looks a bit nicer with more padding on right */
+	padding: 7px 10px 7px 7px;
+
+	border: 3px grey outset;
 }
 
 
@@ -118,17 +116,13 @@ body {
 
 	border-style: inset;
 
-	/* color: red; */
-	/* font-weight: bold; */
 	font-style: italic;
 	text-decoration: none;
 }
 
 
 #subsection_links a:focus, #subsection_links a:hover {
-	background-color: lightgray;
-	
-	/* color: red; */
+	background-color: lightgray;	
 	font-style: italic;
 }
 
@@ -138,20 +132,17 @@ body {
 }
 
 
-#main_body {
-	display: inline-block;
-
-	/* color: black; */
-
+#main_body {	
 	background-color: rgb(240, 240, 240);
+	
+	width: 99%;
 
-	width: 92.5%;
-
-	margin: 4px;
-	padding: 20px;
-
+	padding: 15px 40px 15px 40px;
+	
 	border-style: solid;
 	border-width: 1px;
+	
+	margin: auto;
 }
 
 
@@ -159,20 +150,14 @@ body {
 	display: inline-block;
 	text-align: center;
 
-	/* font-variant: small-caps; */
-	font-style: italic;
+	background-color: white;
+	
 	font-size: 25px;
 	font-weight: lighter;
 
-	background-color: white;
-
-	border-width: 1px;
-	border-style: dotted;
-	/* border-color: gray; */
-
 	padding: 8px;
-	/* padding-left: 13px; */
-	/* padding-right: 13px; */
+	
+	border: 1px hidden;
 	
 	margin: 10px;
 	margin-bottom: 1em;
@@ -180,9 +165,10 @@ body {
 
 
 #main_body p {
+	text-align: left;
+
 	margin: 0px;
 	margin-bottom: 1em;
-	text-align: left;
 }
 
 
@@ -207,30 +193,24 @@ body {
 
 #main_body ul, ol {
 	color: black;
-	font-style: italic;
-	font-size: 1em;
 	line-height: 1.5em;
 	text-align: left;
-	/* padding: 0px; */
+
+	padding: 0px 0px 0px 1.5em;
 }
 
 
 #game_entry_holder {
 	display: inline-block;
-	/* width: 94%; */
-	/* padding: 10px; */
 }
 
 .game_entry {
-	display: inline-block;
-	text-align: left;
-	/* width: 99%; */
-	margin-bottom: 10px;
+	display: flex;
 	background-color: white;
-	border-width: 1px;
-	border-style: dotted;
-	border-color: grey;
+	text-align: left;
 	padding: 10px;
+	border: 1px dotted grey;
+	margin-bottom: 10px;
 }
 
 .game_entry_image_section {
@@ -258,22 +238,18 @@ body {
 
 .game_entry_text_section {
 	display: inline-block;		
-	width: 78.5%;
-	height: 100%;
 	vertical-align: top;
+	padding: 5px;
 }
 
 #game_entry_holder h2 {
 	vertical-align: top;
-	line-height: 1.5em;
 	color: black;
 	font-weight: normal;
 	font-size: 1.3em;
-	/* font-variant: small-caps; */
 	font-style: normal;
 	text-decoration: none;
-	margin: 0px;
-	/* word-spacing: -0.3em; */
+	margin: 0px 0px 0.5em 0px;
 }
 
 #game_entry_holder h2 a {
@@ -282,6 +258,11 @@ body {
 
 #game_entry_holder a:visited {
 	color: black;
+}
+
+.bookend {
+	display: inline-block;
+	margin: 0.5em 1em 1em 1em;
 }
 
 @media only screen and (orientation: portrait) {
