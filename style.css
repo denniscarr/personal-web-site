@@ -23,7 +23,6 @@ body {
 	font-size: 1em;
 	letter-spacing: 0.02em;
 	word-spacing: 0.1em;
-	/* line-height: 0px; */
 	text-align: center;
 }
 
@@ -86,7 +85,7 @@ body {
 }
 
 
-#subsection_links {
+nav {
 	text-align: center;
 	text-indent: 5px;
 
@@ -94,7 +93,7 @@ body {
 }
 
 
-#subsection_links .link {
+nav .link {
 	display: inline-block;
 	min-width: 115px;
 
@@ -111,7 +110,7 @@ body {
 }
 
 
-#subsection_links .selected_link {
+nav .selected_link {
 	background-color: lightgrey;
 
 	border-style: inset;
@@ -121,13 +120,13 @@ body {
 }
 
 
-#subsection_links a:focus, #subsection_links a:hover {
+nav a:focus, nav a:hover {
 	background-color: lightgray;	
 	font-style: italic;
 }
 
 
-#subsection_links .bookend {
+nav .bookend {
 	display: inline-block;
 }
 
@@ -136,6 +135,8 @@ main {
 	background-color: rgb(240, 240, 240);
 	
 	width: 99%;
+
+	line-height: 1.1em;
 
 	padding: 15px 40px 15px 40px;
 	
@@ -277,10 +278,10 @@ main hr {
 		width: 95%;
 		min-width: 0px;
 	}
-	#subsection_links {
+	nav {
 		width: 100px;
 	}
-	#subsection_links .link {
+	nav .link {
 		margin-bottom: 5px;
 	}
 	.game_entry_image_section {
