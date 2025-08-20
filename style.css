@@ -155,6 +155,7 @@ main h1 {
 	
 	font-size: 25px;
 	font-weight: lighter;
+	line-height: 1em;
 
 	padding: 8px;
 	
@@ -208,6 +209,7 @@ main hr {
 }
 
 
+/* A div that holds all the game entries */
 #game_entry_holder {
 	display: inline-block;
 }
@@ -284,11 +286,18 @@ main hr {
 	nav .link {
 		margin-bottom: 5px;
 	}
+	.game_entry {
+		display: block;
+		text-align: center;
+		padding-top: 20px;
+	}
 	.game_entry_image_section {
+		display: block;
 		width: 100%;
+		margin-bottom: 0.5em;
 	}
 	.game_entry_text_section {
-		width: 100%;
+		display: block;
 	}
 	.game_entry_text_section p {
 		text-align: center;
