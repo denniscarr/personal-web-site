@@ -132,7 +132,7 @@ body {
 }
 
 
-#main_body {	
+main {	
 	background-color: rgb(240, 240, 240);
 	
 	width: 99%;
@@ -146,7 +146,7 @@ body {
 }
 
 
-#main_body h1 {
+main h1 {
 	display: inline-block;
 	text-align: center;
 
@@ -164,7 +164,7 @@ body {
 }
 
 
-#main_body p {
+main p {
 	text-align: left;
 
 	margin: 0px;
@@ -172,7 +172,7 @@ body {
 }
 
 
-#main_body a {
+main a {
 	color: #3c3c3c;
 	text-decoration: underline;
 	text-decoration-thickness: 1px;
@@ -181,17 +181,17 @@ body {
 }
 
 
-#main_body a:focus, #main_body a:hover {
+main a:focus, main a:hover {
 	font-style: italic;
 }
 
 
-#main_body a:visited {
+main a:visited {
 	color: #5d5d5d;
 }
 
 
-#main_body ul, ol {
+main ul, ol {
 	color: black;
 	line-height: 1.5em;
 	text-align: left;
@@ -200,10 +200,10 @@ body {
 }
 
 
-#main_body hr {
+main hr {
 	display: inline-block;
 	width: 90%;
-	margin: 1em 0em 1.5em 0em;
+	margin: 1.5em auto;
 }
 
 
