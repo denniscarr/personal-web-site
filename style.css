@@ -200,6 +200,13 @@ body {
 }
 
 
+#main_body hr {
+	display: inline-block;
+	width: 90%;
+	margin: 1em 0em 1.5em 0em;
+}
+
+
 #game_entry_holder {
 	display: inline-block;
 }
