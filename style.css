@@ -76,6 +76,7 @@ strong {
 	white-space: pre-wrap;
 
 	overflow: hidden;
+	height: 400px;
 }
 
 #ihavefivehat_logo a {
@@ -212,6 +213,7 @@ main ul, ol {
 	color: black;
 	text-align: left;
 	padding: 0px 0px 0px 1.5em;
+	margin-bottom: 0.5em;
 }
 
 main li {
@@ -272,7 +274,7 @@ main hr {
 	min-width: 135px;
 	display: flex;
 	justify-content: end;
-	align-items: center;
+	align-items: start;
 }
 
 .game-entry .right a {
