@@ -229,43 +229,14 @@ main hr {
 
 .game-entry {
 	background-color: white;
-	padding: 10px;
+	padding: 16px;
 	border: 1px dotted grey;
 	margin-bottom: 10px;
 	display: flex;
-	gap: 10px;
+	gap: 16px;
 }
 
 .game-entry .left {
-	flex: 0 0 auto;
-	min-width: 135px;
-	display: flex;
-	justify-content: start;
-	align-items: center;
-}
-
-.game-entry .left a {
-	flex: 1;
-	display: flex;
-	justify-content: start;
-	align-items: center;
-}
-
-.game-entry img {
-	flex: none;
-	width: 125px;
-	height: 125px;
-	overflow: hidden;	
-	border-style: double;
-	border-color: gray;
-	border-width: 3px;
-}
-
-.game-entry img:hover {
-	border-color: lightgray;
-}
-
-.game-entry .right {
 	flex: 1;
 	display: flex;
 	flex-direction: column;
@@ -291,10 +262,34 @@ main hr {
 	color: black;
 }
 
-.game-entry .right p {
-	margin: 0px;
+.game-entry .right {
+	flex: 0 0 auto;
+	min-width: 135px;
+	display: flex;
+	justify-content: end;
+	align-items: center;
 }
 
+.game-entry .right a {
+	flex: 1;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+
+.game-entry img {
+	flex: none;
+	width: 125px;
+	height: 125px;
+	overflow: hidden;	
+	border-style: double;
+	border-color: gray;
+	border-width: 3px;
+}
+
+.game-entry img:hover {
+	border-color: lightgray;
+}
 
 .bookend {
 	display: inline-block;
