@@ -87,32 +87,37 @@ body {
 
 
 nav {
-	text-align: center;
 	text-indent: 5px;
-	margin: 15px auto;
+	margin: 15px 0px;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 
 nav ul {
 	list-style: none;
 	display: flex;
+	align-items: center;
+	gap: 4px;
 }
 
 nav a {
-	display: inline-block;
-	min-width: 115px;
+	min-width: 158px;
+	min-height: 3em;
 
 	background-color: white;
 	color: black;
 	font-size: 1.1em;
 	text-decoration: none;
 
-	
 	/* text looks a bit nicer with more padding on right */
 	padding: 7px 10px 7px 7px;
 
 	border: 3px grey outset;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 
@@ -134,6 +139,7 @@ nav a:focus, nav a:hover {
 
 nav .bookend {
 	display: inline-block;
+	min-width: 35px;
 }
 
 
@@ -285,6 +291,11 @@ main hr {
 	color: black;
 }
 
+.game-entry .right p {
+	margin: 0px;
+}
+
+
 .bookend {
 	display: inline-block;
 	margin: 0.5em 1em 1em 1em;
@@ -296,25 +307,30 @@ main hr {
 		min-width: 0px;
 	}
 	nav {
-		width: 100px;
+		flex-direction: column;
 	}
-	nav .link {
-		margin-bottom: 5px;
+	nav .bookend {
+		visibility: hidden;
+		width: 0px;
+		height: 0px;
+		margin: 0px;
 	}
-	.game_entry {
-		display: block;
-		text-align: center;
-		padding-top: 20px;
+	nav ul {
+		flex-wrap: wrap;
+		justify-content: center;
 	}
-	.game_entry_image_section {
-		display: block;
-		width: 100%;
-		margin-bottom: 0.5em;
+	.game-entry {
+		flex-direction: column;
+		align-items: center;
 	}
-	.game_entry_text_section {
-		display: block;
+	.game-entry .left a {
+		justify-content: center;
 	}
-	.game_entry_text_section p {
+	.game-entry .right {
+		justify-content: center;
+		align-items: center;
+	}
+	.game-entry .right p {
 		text-align: center;
 	}
 }
