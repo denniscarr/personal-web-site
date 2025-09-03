@@ -1,0 +1,5 @@
+Generic Page:
+div#content>header>((section#ihavefivehat_logo>p#logo_string{ihavefivehat}+script[src="./scripts/generate_logo.js"])+(nav>span.bookend{---}+(ul>(li>a[href="./professional-work.html"]{professional<br>work})+(li>a[href="./personal-work.html"]{personal<br>work})+(li>a[href="./about.html"]{about})+(li>a[href="./contact.html"]{contact}*))+span.bookend{---}))^(main>h2{Page Title}+p{Content!}+span.bookend{---})
+
+Game Entry:
+div.game-entry>(div.left>(h2>a[href="url"]{Game Name})+p{Game description})+(div.right>a[href="url"]>img[src="imgsrc" alt="GameScreenshot"])
