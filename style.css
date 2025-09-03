@@ -254,7 +254,7 @@ main hr {
 .game-entry h2 {
 	color: black;
 	text-align: left;
-	font-weight: normal;
+	font-weight: bold;
 	font-size: 1.3em;
 	font-style: normal;
 	text-decoration: none;
@@ -286,9 +286,10 @@ main hr {
 
 .game-entry img {
 	flex: none;
-	width: 125px;
-	height: 125px;
-	overflow: hidden;	
+	/* width: 125px; */
+	/* height: 125px; */
+	overflow: hidden;
+	box-sizing: content-box;
 	border-style: double;
 	border-color: gray;
 	border-width: 3px;
