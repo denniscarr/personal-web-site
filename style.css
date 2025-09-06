@@ -137,8 +137,13 @@ nav {
 nav ul {
 	list-style: none;
 	display: flex;
-	align-items: center;
+	justify-content: center;
+	align-content: stretch;
 	gap: 4px;
+}
+
+nav li {
+	display: flex;
 }
 
 nav a {
