@@ -63,14 +63,13 @@ img {
 strong {
 	font-family: "Courier Prime";
 	font-weight: normal;
-	/* font-weight: semi-bold; */
 	color: black;
 }
 
 
 #content {
 	display: block;
-	width: 70%;
+	width: 70vw;
 	max-width: 800px;
 	padding: 10px 0px 10px 0px;
 	margin: auto;
@@ -148,11 +147,11 @@ nav li {
 
 nav a {
 	min-width: 158px;
-	min-height: 3em;
+	min-height: 3rem;
 
 	background-color: white;
 	color: black;
-	font-size: 1.1em;
+	font-size: 1.1rem;
 	text-decoration: none;
 
 	/* text looks a bit nicer with more padding on right */
@@ -193,7 +192,7 @@ main {
 	
 	width: 99%;
 
-	line-height: 1.1em;
+	line-height: 1.1rem;
 
 	padding: 15px 40px 15px 40px;
 	
@@ -210,24 +209,24 @@ main h1 {
 
 	background-color: white;
 	
-	font-size: 25px;
+	font-size: 1.7rem;
 	font-weight: lighter;
-	line-height: 1em;
+	line-height: 1.5rem;
 
-	padding: 8px;
+	padding: 0.7rem;
 	
 	border: 1px hidden;
 	
 	margin: 10px;
-	margin-bottom: 1em;
+	margin-bottom: 1.25rem;
 }
 
 
 main p {
 	text-align: left;
+	line-height: 1.3rem;
 
-	margin: 0px;
-	margin-bottom: 1em;
+	margin-bottom: 1.25rem;
 }
 
 
@@ -258,7 +257,7 @@ main ul, ol {
 }
 
 main li {
-	margin-bottom: 0.25em;
+	margin-bottom: 0.25rem;
 }
 
 
@@ -295,11 +294,12 @@ main hr {
 .game-entry h2 {
 	color: black;
 	text-align: left;
-	font-weight: bold;
-	font-size: 1.3em;
+	font-family: "Courier Prime";
+	line-height: 1.5rem;
+	font-size: 1.3rem;
 	font-style: normal;
 	text-decoration: none;
-	margin: 0px 0px 0.5em 0px;
+	margin: 0px 0px 0.75rem 0px;
 }
 
 .game-entry h2 a {
@@ -327,8 +327,6 @@ main hr {
 
 .game-entry img {
 	flex: none;
-	/* width: 125px; */
-	/* height: 125px; */
 	overflow: hidden;
 	box-sizing: content-box;
 	border-style: double;
@@ -342,7 +340,7 @@ main hr {
 
 .bookend {
 	display: inline-block;
-	margin: 0.5em 1em 1em 1em;
+	margin: 0.5rem 1rem 1rem 1rem;
 }
 
 @media only screen and (orientation: portrait) {
