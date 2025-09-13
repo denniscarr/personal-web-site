@@ -233,7 +233,7 @@ main h1 {
 	
 	font-size: 1.7rem;
 	font-weight: lighter;
-	line-height: 1.5;
+	line-height: 1;
 
 	padding: 0.7rem;
 	
@@ -298,11 +298,47 @@ main hr {
 
 .game-entry {
 	background-color: white;
-	padding: 16px;
+	/* padding: 16px; */
 	border: 1px dotted grey;
 	margin-bottom: 10px;
 	display: flex;
-	gap: 16px;
+	flex-direction: column;
+	/* gap: 16px; */
+}
+
+.game-entry .header {
+	height: 3rem;
+	border-width: 0px 0px 1px 0px;
+	border-style: dotted;
+	border-color: grey;
+	/* box-shadow: 0px 1px 1px lightgray; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.game-entry h2 {
+	color: black;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 1.3rem;
+	font-style: normal;
+	text-decoration: none;
+}
+
+.game-entry h2 a {
+	color: black;
+	text-decoration: none;
+}
+
+.game-entry h2 a:visited {
+	color: black;
+}
+
+.game-entry .body {
+	padding: 16px;
+	display: flex;
+	gap: 10px;
 }
 
 .game-entry .left {
@@ -311,25 +347,6 @@ main hr {
 	flex-direction: column;
 	justify-content: center;
 	align-items: start;
-}
-
-.game-entry h2 {
-	color: black;
-	text-align: left;
-	font-family: "Courier Prime";
-	line-height: 1.5;
-	font-size: 1.3rem;
-	font-style: normal;
-	text-decoration: none;
-	margin: 0px 0px 0.75rem 0px;
-}
-
-.game-entry h2 a {
-	color: black;
-}
-
-.game-entry h2 a:visited {
-	color: black;
 }
 
 .game-entry .right {
@@ -349,6 +366,8 @@ main hr {
 
 .game-entry img {
 	flex: none;
+	width: 200px;
+	height: 200px;
 	overflow: hidden;
 	box-sizing: content-box;
 	border-style: double;
