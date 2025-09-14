@@ -63,7 +63,7 @@ html {
   background: linear-gradient(to bottom, white, black);
 }
 
-*, *:before, *:after {
+*, *::before, *::after {
   box-sizing: inherit;
 }
 
@@ -168,8 +168,8 @@ nav li {
 }
 
 nav a {
-	min-width: 158px;
-	min-height: 3rem;
+	min-width: 170px;
+	min-height: 4rem;
 
 	background-color: white;
 	color: black;
@@ -298,20 +298,18 @@ main hr {
 
 .game-entry {
 	background-color: white;
-	/* padding: 16px; */
 	border: 1px dotted grey;
 	margin-bottom: 10px;
 	display: flex;
 	flex-direction: column;
-	/* gap: 16px; */
 }
 
 .game-entry .header {
 	height: 3rem;
+	padding: 2rem 1rem 2rem 1rem;
 	border-width: 0px 0px 1px 0px;
 	border-style: dotted;
 	border-color: grey;
-	/* box-shadow: 0px 1px 1px lightgray; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -338,7 +336,7 @@ main hr {
 .game-entry .body {
 	padding: 16px;
 	display: flex;
-	gap: 10px;
+	gap: 1rem;
 }
 
 .game-entry .left {
@@ -405,8 +403,9 @@ main hr {
 	main {
 		padding: 15px 15px 15px 15px;
 	}
-	.game-entry {
+	.game-entry .body {
 		flex-direction: column;
+		flex-flow: column-reverse;
 		align-items: center;
 	}
 	.game-entry .left a {
