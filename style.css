@@ -55,12 +55,42 @@
 /* end fonts */
 
 
+/* global properties */
+:root {
+	--background-hue: 100;
+	--background-sat: 0%;
+	--background-val-1: 90%;
+	--background-val-2: 20%;
+	--background-color-1: hsl(var(--background-hue), var(--background-sat), var(--background-val-1));
+	--background-color-2: hsl(var(--background-hue), var(--background-sat), var(--background-val-2));
+	
+	--panel-hue: 80;
+	--panel-sat: 0%;
+	--panel-val-bright: 99%;
+	--panel-val-dim: 95%;
+	--panel-val-dark: 80%;
+	--panel-color-bright: hsl(var(--panel-hue), var(--panel-sat), var(--panel-val-bright));
+	--panel-color-dim: hsl(var(--panel-hue), var(--panel-sat), var(--panel-val-dim));
+	--panel-color-dark: hsl(var(--panel-hue), var(--panel-sat), var(--panel-val-dark));
+	
+	--text-color: rgb(34, 34, 34);
+	--text-color-strong: black;
+
+	--border-hue: 0;
+	--border-sat: 0%;
+	--border-val-dim: 65%;
+	--border-val-dark: 50%;
+	--border-color-dim: hsl(var(--border-hue), var(--border-sat), var(--border-val-dim));
+	--border-color-dark: hsl(var(--border-hue), var(--border-sat), var(--border-val-dark));
+}
+
+
 /* Reset */
 html {
   box-sizing: border-box;
   font-size: clamp(1rem, 1rem + 1.5vw, 1.1rem);
   min-height: 100%;
-  background: linear-gradient(to bottom, white, black);
+  background: linear-gradient(to bottom, var(--background-color-1), var(--background-color-2));
 }
 
 *, *::before, *::after {
@@ -71,7 +101,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   margin: 0;
   padding: 0;
   font-family: "Courier New", Courier, monospace;
-  color: rgb(34, 34, 34);
+  color: var(--text-color);
   font-weight: 400;
   text-align: center;
 }
@@ -84,7 +114,7 @@ img {
 strong {
 	font-family: "Courier Prime", "Courier New", Courier, monospace;
 	font-weight: normal;
-	color: black;
+	color: var(--text-color-strong);
 }
 /* End reset */
 
@@ -100,14 +130,14 @@ strong {
 
 
 #ihavefivehat_logo {
-	background-color: rgb(252, 252, 252);
+	background-color: var(--panel-color-dim);
 	max-height: 140px;
 	
 	padding: 0.725rem 1rem;
 	
 	border-width: 1px;
 	border-style: dashed;
-	border-color: black;
+	border-color: var(--border-color-dark);
 	
 	margin: 0px auto;
 	
@@ -117,7 +147,7 @@ strong {
 #logo_string {
 	display: inline;
 
-	color: rgb(74, 74, 74);
+	color: var(--text-color);
 	font-family: "Courier New";
 	font-size: 19px;
 	font-style: normal;
@@ -137,7 +167,7 @@ strong {
 }
 
 #ihavefivehat_logo a {
-	color: black;
+	color: var(--text-color);
 	text-decoration: none;
 	word-break: break-word;
 }
@@ -171,15 +201,15 @@ nav a {
 	min-width: 170px;
 	min-height: 4rem;
 
-	background-color: white;
-	color: black;
+	background-color: var(--panel-color-bright);
+	color: var(--text-color);
 	font-size: 1.1rem;
 	text-decoration: none;
 
 	/* text looks a bit nicer with more padding on right */
 	padding: 7px 10px 7px 7px;
 
-	border: 3px grey outset;
+	border: 3px var(--border-color-dark) outset;
 
 	display: flex;
 	justify-content: center;
@@ -188,7 +218,7 @@ nav a {
 
 
 nav .selected-link {
-	background-color: lightgrey;
+	background-color: var(--panel-color-dark);
 
 	border-style: inset;
 
@@ -210,7 +240,7 @@ nav .bookend {
 
 
 main {	
-	background-color: rgb(240, 240, 240);
+	background-color: var(--panel-color-dim);
 	
 	width: 99%;
 
@@ -229,7 +259,7 @@ main h1 {
 	display: inline-block;
 	text-align: center;
 
-	background-color: white;
+	background-color: var(--panel-color-bright);
 	
 	font-size: 1.7rem;
 	font-weight: lighter;
@@ -253,7 +283,7 @@ main p {
 
 
 main a {
-	color: #3c3c3c;
+	color: var(--text-color);
 	text-decoration: underline;
 	text-decoration-thickness: 1px;
 	text-decoration-style: dotted;
@@ -272,7 +302,7 @@ main a:visited {
 
 
 main ul, ol {
-	color: black;
+	color: var(--text-color);
 	text-align: left;
 	padding: 0px 0px 0px 1.5em;
 	margin-bottom: 0.5em;
@@ -297,8 +327,8 @@ main hr {
 }
 
 .game-entry {
-	background-color: white;
-	border: 1px dotted grey;
+	background-color: var(--panel-color-bright);
+	border: 1px dotted var(--border-color-dim);
 	margin-bottom: 10px;
 	display: flex;
 	flex-direction: column;
@@ -308,7 +338,7 @@ main hr {
 	padding: 1rem;
 	border-width: 0px 0px 1px 0px;
 	border-style: dotted;
-	border-color: grey;
+	border-color: var(--border-color-dim);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -368,7 +398,7 @@ main hr {
 	overflow: hidden;
 	box-sizing: content-box;
 	border-style: double;
-	border-color: gray;
+	border-color: var(--border-color-dim);
 	border-width: 3px;
 }
 
