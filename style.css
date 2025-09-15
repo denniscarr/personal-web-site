@@ -305,8 +305,7 @@ main hr {
 }
 
 .game-entry .header {
-	height: 3rem;
-	padding: 2rem 1rem 2rem 1rem;
+	padding: 1rem;
 	border-width: 0px 0px 1px 0px;
 	border-style: dotted;
 	border-color: grey;
